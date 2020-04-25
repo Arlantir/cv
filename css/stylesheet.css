@@ -2,6 +2,12 @@
   margin-bottom: 0;
 }
 
+.title-table {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: bold;
+}
+
 .avatar {
   background-image: url(../img/photo.jpeg);
   background-color: #cccccc;
