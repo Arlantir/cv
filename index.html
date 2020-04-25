@@ -29,11 +29,19 @@
           <h3 class="title-small">Обо мне</h3>
           <table>
             <tbody>
-            <tr><td>Languages: родной язык: Русский | начальный уровень: Английский язык</td></tr>
-            <tr><td>Locations: Россия, Москва</td></tr>
-            <tr><td>Contacts: Email: <a href="mailto:ror@worldoflosttime.ru">ror@worldoflosttime.ru</a> | Phone: <a
-                href="tel:+7(926)694-62-71">+7(926)694-62-71</a></td></tr>
-            <tr><td>Repositories: <a href="https://github.com/Arlantir" target="_blank">GitHub</a></td></tr>
+            <tr>
+              <td>Languages: родной язык: Русский | начальный уровень: Английский язык</td>
+            </tr>
+            <tr>
+              <td>Locations: Россия, Москва</td>
+            </tr>
+            <tr>
+              <td>Contacts: Email: <a href="mailto:ror@worldoflosttime.ru">ror@worldoflosttime.ru</a> | Phone: <a
+                  href="tel:+7(926)694-62-71">+7(926)694-62-71</a></td>
+            </tr>
+            <tr>
+              <td>Repositories: <a href="https://github.com/Arlantir" target="_blank">GitHub</a></td>
+            </tr>
             </tbody>
           </table>
         </div>
@@ -48,27 +56,152 @@
         <h3 class="title-small">Навыки</h3>
         <table class="u-full-width">
           <tbody>
-            <tr>
-              <td><b>Fronted</b></td>
-              <td>HTML5, CSS3, JS, Bootstrap 4</td>
-            </tr>
-            <tr>
-              <td><b>Linux</b></td>
-              <td>Ubuntu</td>
-            </tr>
-            <tr>
-              <td><b>Ruby/RoR</b></td>
-              <td>Rails (6.0.2.1), Ruby (2.6.5), Devise, pundit, rails-i18n, resque, carrierwave,
-                rmagick, fog, omniauth, rspec-rails, factory_bot_rails, capistrano</td>
-            </tr>
-            <tr>
-              <td><b>VCS</b></td>
-              <td>Git</td>
-            </tr>
-            <tr>
-              <td><b>Platforms</b></td>
-              <td>Heroku, DigitalOcean</td>
-            </tr>
+
+          <!-- Ruby|RoR -->
+          <tr>
+            <td><b>Ruby/RoR</b></td>
+            <td>
+              <ul>
+                - Понимание основных принципов <b>ООП</b> и <b>MVC</b>;
+              </ul>
+              <ul>
+                - Реализовал несколько обучающих проектов на <b>Ruby</b> и <b>RoR</b>, используя, в частности,
+                популярные
+                гемы:
+                <li>
+                  <b>Devise</b> для аунтификации;
+                </li>
+                <li>
+                  <b>Pundit</b> для авторизации пользователей;
+                </li>
+                <li>
+                  <b>i18n</b> для русской локализации;
+                </li>
+                <li>
+                  <b>Resque</b> для отправки почты через очередь задач <b>ActiveJob</b>, что бы пользователь не ждал
+                  отправки почты;
+                </li>
+                <li>
+                  <b>Fog-aws</b>, <b>carrierwave</b> для загрузки и хранения фотографий на <b>Amazon S3</b>;
+                </li>
+                <li>
+                  <b>Factory_bot</b> для создания фабрик, которые применяются в тестах;
+                </li>
+                <li>
+                  <b>Capybara</b> для интеграционных тестов;
+                </li>
+                <li>
+                  <b>Оmniauth</b> для аунтификации через социальные сети;
+                </li>
+                <li>
+                  <b>Capistrano</b> для деплоя на `production` всего парой команд.
+                </li>
+              </ul>
+              <ul>
+                - Использовал <b>Web-sockets</b> в небольшом приложении чата, чтобы показать сообщения и пользователей,
+                которые в данный момент находятся онлайн.
+              </ul>
+            </td>
+          </tr>
+
+          <!-- RSpec -->
+          <tr>
+            <td><b>RSpec</b></td>
+            <td>
+              <ul>
+                - Покрытие интеграционными и юнит тестами приложений на <b>RoR</b>, тестировались такие части как:
+                <li><b>Controllers</b>;</li>
+                <li><b>Models</b>;</li>
+                <li><b>Views</b>.</li>
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Databases -->
+          <tr>
+            <td><b>Databases</b></td>
+            <td>
+              <ul>- Понимание основной концепции реляционных баз данных;</ul>
+              <ul>- Было много практики с простым, но вполне достаточным набором запросов: <b>выбрать</b>, <b>
+                обновить</b>, <b>объединения</b>, <b>удалить</b>.
+              </ul>
+              <ul>- Использовал PostgreSQL в качестве основной базы данных в среде <b>разработки</b>, <b>тестирования</b>  и
+                настройки <b>production</b> в учебных проектах;
+              </ul>
+              <ul>
+                - <b>Redis + Resque</b> - практиковался в создании фоновых задач для рассылки через ActionMailer.
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Git -->
+          <tr>
+            <td><b>Git</b></td>
+            <td>
+              <ul>
+                - Для процессе обучения использовалась система контролся версий <b>GitHub</b>.
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Fronted -->
+          <tr>
+            <td><b>Fronted</b></td>
+            <td>
+              <ul>
+                - <b>HTML + CSS</b> простая верстка страниц, использующая сетки и адаптирующаяся к разным размерам экрана;
+              </ul>
+              <ul>
+                - <b>Bootstrap</b> для облегчения вертски и придания более элегантного вида страницам;
+              </ul>
+              <ul>
+                - <b>JavaScript (JQuery, CoffeScript)</b> - только базовое использование, например в веб-сокетах или добавления
+                вопроса/ответа.
+              </ul>
+            </td>
+          </tr>
+
+          <!-- DevOps -->
+          <tr>
+            <td><b>DevOps</b></td>
+            <td>
+              <ul>
+                - Простоая настройка <b>nginx + passenger</b> на <b>VPS</b>;
+              </ul>
+              <ul>
+                - Развертование приложений на <b>Heroku</b> и <b>VPS</b>. Для автоматизации деплоя на <b>VPS</b>
+                использовал <b>capistrano</b>.
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Skills -->
+          <tr>
+            <td><b>Skills</b></td>
+            <td>
+              <ul>
+                - Linux: базовое администрирование Ubuntu и на удаленном веб-сервере для разработки и развертывания
+                обучающих приложений RoR;
+              </ul>
+            </td>
+          </tr>
+
+          <!-- Unique skills -->
+          <tr>
+            <td><b>Unique skills</b></td>
+            <td>
+              <ul>
+                - Я понимаю почему стиль кода так важен и следуюему инстинктивно;
+              </ul>
+              <ul>
+                - Я не могу представить разработку без тестов, по этому я трачу время на написание тестов, что бы
+                покрыть новый функционал тестами;
+              </ul>
+              <ul>
+                - При отладке использую <b>pry</b>, без него не могу существовать.
+              </ul>
+            </td>
+          </tr>
           </tbody>
         </table>
       </div>
@@ -78,14 +211,14 @@
         <h3 class="title-small">Образование</h3>
         <table class="u-full-width">
           <tbody>
-            <tr>
-              <td>Московский финансово-юридический университет</td>
-              <td>2012 - 2016</td>
-            </tr>
-            <tr>
-              <td>специальность: Финансы и кредит</td>
-              <td></td>
-            </tr>
+          <tr>
+            <td>Московский финансово-юридический университет</td>
+            <td>2012 - 2016</td>
+          </tr>
+          <tr>
+            <td>специальность: Финансы и кредит</td>
+            <td></td>
+          </tr>
           </tbody>
         </table>
       </div>
@@ -95,12 +228,12 @@
         <h3 class="title-small">Курсы, Тренинги</h3>
         <table class="u-full-width">
           <tbody>
-            <tr>
-            <tr>
-              <td>goodprogrammer.ru</td>
-              <td>Ruby/Ruby on Rails</td>
-              <td>ноябрь 2019 - апрель 2020</td>
-            </tr>
+          <tr>
+          <tr>
+            <td><a href="https://goodprogrammer.ru" target="_blank">goodprogrammer.ru</a></td>
+            <td>Ruby/Ruby on Rails</td>
+            <td>ноябрь 2019 - апрель 2020</td>
+          </tr>
           </tbody>
         </table>
       </div>
@@ -111,31 +244,31 @@
         <p>Проекты сделанные при помощи Ruby/Ruby on Rails</p>
         <table class="u-full-width">
           <tbody>
-            <tr>
-              <td>Шашлыки</td>
-              <td><a href="https://kuda-edem.com/" target="_blank">Link</a></td>
-              <td><a href="https://github.com/Arlantir/bbq" target="_blank">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Askme</td>
-              <td><a href="https://megoask.herokuapp.com/" target="_blank">Link</a></td>
-              <td><a href="https://github.com/Arlantir/askme" target="_blank">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Метеосервис</td>
-              <td><a href="#" target="_blank">Link</a></td>
-              <td><a href="https://github.com/Arlantir/meteoservice" target="_blank">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Парсер фильмов</td>
-              <td><a href="#" target="_blank">Link</a></td>
-              <td><a href="https://github.com/Arlantir/movie_search" target="_blank">GitHub</a></td>
-            </tr>
-            <tr>
-              <td>Виселица</td>
-              <td><a href="#" target="_blank">Link</a></td>
-              <td><a href="https://github.com/Arlantir/hangman" target="_blank">GitHub</a></td>
-            </tr>
+          <tr>
+            <td>Шашлыки</td>
+            <td><a href="https://kuda-edem.com/" target="_blank">Link</a></td>
+            <td><a href="https://github.com/Arlantir/bbq" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Askme</td>
+            <td><a href="https://megoask.herokuapp.com/" target="_blank">Link</a></td>
+            <td><a href="https://github.com/Arlantir/askme" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Метеосервис</td>
+            <td></td>
+            <td><a href="https://github.com/Arlantir/meteoservice" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Парсер фильмов</td>
+            <td></td>
+            <td><a href="https://github.com/Arlantir/movie_search" target="_blank">GitHub</a></td>
+          </tr>
+          <tr>
+            <td>Виселица</td>
+            <td></td>
+            <td><a href="https://github.com/Arlantir/hangman" target="_blank">GitHub</a></td>
+          </tr>
           </tbody>
         </table>
       </div>
