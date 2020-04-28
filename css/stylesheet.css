@@ -1,3 +1,11 @@
+/*.title {*/
+/*  vertical-align: top;*/
+/*}*/
+
+td:first-child {
+  vertical-align: top;
+}
+
 .title-small {
   margin-bottom: 0;
 }
