@@ -30,7 +30,7 @@
           <table>
             <tbody>
             <tr>
-              <td>Язык: родной язык: Русский | начальный уровень: Английский язык</td>
+              <td>Язык:Русский | Английский: чтение технической документаци</td>
             </tr>
             <tr>
               <td>Местопроживание: Россия, Москва</td>
@@ -65,10 +65,13 @@
             <td class="title"><b>Ruby/RoR</b></td>
             <td>
               <ul>
-                - Понимание основных принципов <b>ООП</b> и <b>MVC</b>;
+                - Понимание основных принципов <b>ООП</b>;
               </ul>
               <ul>
-                - Реализовал несколько проектов на <b>Ruby</b> и <b>RoR</b>, используя, в частности,
+                - Для чего нужно <b>MVC</b>;
+              </ul>
+              <ul>
+                - Разработка проектов на <b>Ruby</b> и <b>RoR</b>, используя, в частности,
                 популярные
                 гемы:
                 <li>
@@ -81,14 +84,14 @@
                   <b>i18n</b> для русской локализации;
                 </li>
                 <li>
-                  <b>Resque</b> для отправки почты через очередь задач <b>ActiveJob</b>, что бы пользователь не ждал
+                  <b>Resque | Sidekiq</b> для отправки почты через очередь задач <b>ActiveJob</b>, что бы пользователь не ждал
                   отправки почты;
                 </li>
                 <li>
-                  <b>Fog-aws</b>, <b>carrierwave</b> для загрузки и хранения фотографий на <b>Amazon S3</b>;
+                  <b>Fog AWS</b>, <b>carrierwave</b> для загрузки и хранения фотографий на <b>Amazon S3</b>;
                 </li>
                 <li>
-                  <b>Factory_bot</b> для создания фабрик, которые применяются в тестах;
+                  <b>Factory bot</b> для создания фабрик, которые применяются в тестах;
                 </li>
                 <li>
                   <b>Capybara</b> для интеграционных тестов;
@@ -101,8 +104,11 @@
                 </li>
               </ul>
               <ul>
-                - Использовал <b>Web-sockets</b> в небольшом приложении чата, чтобы показать сообщения и пользователей,
+                - Использовал <b>WebSocket</b> в небольшом приложении чата, чтобы показать сообщения и пользователей,
                 которые в данный момент находятся онлайн.
+              </ul>
+              <ul>
+                - Настройка <b>ActionMailer</b> для работы в фоновом режиме;
               </ul>
             </td>
           </tr>
@@ -113,9 +119,9 @@
             <td>
               <ul>
                 - Покрытие интеграционными и юнит тестами приложений на <b>RoR</b>, тестировались такие части как:
-                <li><b>Controllers</b>;</li>
-                <li><b>Models</b>;</li>
-                <li><b>Views</b>.</li>
+                <li><b>Controllers</b> - использование request spec для проверки правильности обработки запроса;</li>
+                <li><b>Models</b> - проверка логики приложения и валидаций;</li>
+                <li><b>Views</b> - проверка наличия информации на страницах при определенных условиях.</li>
               </ul>
             </td>
           </tr>
@@ -128,11 +134,11 @@
               <ul>- Было много практики с простым, но вполне достаточным набором запросов: <b>выбрать</b>, <b>
                 обновить</b>, <b>объединить</b>, <b>удалить</b>.
               </ul>
-              <ul>- Использовал <b>PostgreSQL</b> в качестве основной базы данных в среде <b>разработки</b>, <b>
+              <ul>- <b>SQL - PostgreSQL</b> в качестве основной базы данных в среде <b>разработки</b>, <b>
                 тестирования</b> и настройки <b>production</b>;
               </ul>
               <ul>
-                - <b>Redis + Resque</b> - практиковался в создании фоновых задач для рассылки через <b>ActionMailer</b>.
+                - <b>No SQL - Redis + Resque</b> - практиковался в создании фоновых задач.
               </ul>
             </td>
           </tr>
@@ -142,7 +148,10 @@
             <td><b>Git</b></td>
             <td>
               <ul>
-                - Использование системы контроля версий <b>GitHub</b>.
+                - <b>Git</b> - использование системы контроля версий (pull/push, commit, rebase).
+              </ul>
+              <ul>
+                - <b>GitHub</b> - управление merge request-ами.
               </ul>
             </td>
           </tr>
@@ -152,14 +161,13 @@
             <td><b>Fronted</b></td>
             <td>
               <ul>
-                - <b>HTML + CSS</b> простая и адаптивная верстка страниц;
+                - <b>HTML + CSS</b> адаптивная верстка страниц на bootstrap;
               </ul>
               <ul>
-                - <b>Bootstrap</b> для облегчения верстки и придания более элегантного вида страницам;
+                - <b>Bootstrap</b> для более быстрой разработки макетов страниц;
               </ul>
               <ul>
-                - <b>JavaScript (JQuery, CoffeScript)</b> - только базовое использование, например в веб-сокетах или добавления
-                вопроса/ответа.
+                - <b>JavaScript</b> - манипуляция DOM и событиями с jQuery, взаимодействие с сервером через web sockets.
               </ul>
             </td>
           </tr>
@@ -169,29 +177,27 @@
             <td><b>DevOps</b></td>
             <td>
               <ul>
-                - Простая настройка <b>nginx + passenger</b> на <b>VPS</b>;
+                - <b>nginx + passenger</b> - разворачивание и настройка с нуля на Ubuntu Server;
               </ul>
               <ul>
-                - Развертывание приложений на <b>Heroku</b> и <b>VPS</b>. Для автоматизации деплоя на <b>VPS</b>
-                использовал <b>capistrano</b>.
+                - <b>heroku</b> - деплой и настройка приложения;
+              </ul>
+              <ul>
+                - <b>VPS - DigitalOcean</b> - настройка сервера для деплоя приложения;
+              </ul>
+              <ul>
+                - <b>capistrano</b> - настраивал для удаленного развертывания приложения на сервере;
+              </ul>
+              <ul>
+                - <b>Linux</b>: базовое администрирование Ubuntu и на удаленном веб-сервере для разработки и
+                развертывания приложений на <b>RoR</b>;
               </ul>
             </td>
           </tr>
 
-          <!-- Skills -->
+          <!-- personal preferences -->
           <tr>
-            <td><b>Skills</b></td>
-            <td>
-              <ul>
-                - Linux: базовое администрирование Ubuntu и на удаленном веб-сервере для разработки и развертывания
-                приложений на <b>RoR</b>;
-              </ul>
-            </td>
-          </tr>
-
-          <!-- Unique skills -->
-          <tr>
-            <td><b>Unique skills</b></td>
+            <td><b>Personal preferences</b></td>
             <td>
               <ul>
                 - Понимаю важность стиля кода и следую ему инстинктивно;
@@ -200,7 +206,7 @@
                 - Понимаю необходимость написания тестов в процессе разработки для покрытия ими нового функционал и с удовольствием занимаюсь этим;
               </ul>
               <ul>
-                - При отладке  всегда использую <b>pry</b>.
+                - Не боюсь влезть в чужой код с помощью <b>pry</b>.
               </ul>
             </td>
           </tr>
@@ -260,7 +266,7 @@
 
       <!-- Courses, Trainings -->
       <div>
-        <h3 class="title-small">Курсы, Тренинги</h3>
+        <h3 class="title-small">Курсы</h3>
         <table class="u-full-width">
           <tbody>
           <tr>
@@ -280,32 +286,33 @@
         <table class="u-full-width">
           <tbody>
           <tr>
-            <td>Шашлыки</td>
+            <td>Шашлыки <br><i>приложение для оргазиции встреч</i></td>
             <td><a href="https://kuda-edem.com/" target="_blank">Link</a></td>
             <td><a href="https://github.com/Arlantir/bbq" target="_blank">GitHub</a></td>
           </tr>
           <tr>
-            <td>Askme</td>
+            <td>Askme <br><i>клон приложения Ask</i></td>
             <td><a href="https://megoask.herokuapp.com/" target="_blank">Link</a></td>
             <td><a href="https://github.com/Arlantir/askme" target="_blank">GitHub</a></td>
           </tr>
           <tr>
-            <td>Чат (instatalk)</td>
+            <td>Чат (instatalk)<br> <i>real-time чат на websockets</i></td>
             <td><a href="https://megoinstatalk.herokuapp.com/" target="_blank">Link</a></td>
             <td><a href="https://github.com/Arlantir/instatalk" target="_blank">GitHub</a></td>
           </tr>
           <tr>
-            <td>Метеосервис</td>
+            <td>Метеосервис <br><i>консольный парсер погоды</i></td>
             <td></td>
             <td><a href="https://github.com/Arlantir/meteoservice" target="_blank">GitHub</a></td>
           </tr>
           <tr>
-            <td>Парсер фильмов</td>
+            <td>Парсер фильмов
+              <br><i>консольный парсер популярных фильмов</i></td>
             <td></td>
             <td><a href="https://github.com/Arlantir/movie_search" target="_blank">GitHub</a></td>
           </tr>
           <tr>
-            <td>Виселица</td>
+            <td>Виселица <br><i>консольная реализация известной игры с простым ОО-дизайном</i></td>
             <td></td>
             <td><a href="https://github.com/Arlantir/hangman" target="_blank">GitHub</a></td>
           </tr>
